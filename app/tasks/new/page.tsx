@@ -7,7 +7,7 @@ export default function NewTaskPage() {
     const router = useRouter();
 
     return (
-        <div className="max-w-3xl mx-auto pt-10 px-4">
+        <div className="w-full pt-4 md:pt-10">
             <TaskForm
                 onClose={() => router.back()}
                 onSuccess={(task) => {

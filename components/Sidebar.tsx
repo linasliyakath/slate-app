@@ -4,7 +4,6 @@ import { Task } from "@/models/Task";
 import { connectDB } from "@/lib/db";
 
 
-// Force dynamic rendering so it fetches fresh data on refresh
 export const dynamic = "force-dynamic";
 
 import { auth } from "@clerk/nextjs/server";
@@ -29,7 +28,7 @@ export default async function Sidebar() {
     const tasks = await getTasks();
 
     return (
-        <aside className="w-64 bg-black text-white min-h-screen flex flex-col fixed left-0 top-0 overflow-y-auto border-r border-gray-900">
+        <aside className="w-64 bg-black text-white min-h-screen flex flex-col overflow-y-auto border-r border-gray-900">
             <div className="p-6 flex items-center gap-4">
                 <Image
                     src="/logo.png"

@@ -5,6 +5,7 @@ import Sidebar from "@/components/Sidebar";
 import Navbar from "@/components/Navbar";
 import ShellClient from "@/components/ShellClient";
 import { ClerkProvider } from "@clerk/nextjs";
+import { MobileMenuProvider } from "@/contexts/MobileMenuContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,10 +23,12 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
         <body className={`${inter.className} bg-black text-white`} suppressHydrationWarning>
-          <Navbar />
-          <ShellClient sidebar={<Sidebar />}>
-            {children}
-          </ShellClient>
+          <MobileMenuProvider>
+            <Navbar />
+            <ShellClient sidebar={<Sidebar />}>
+              {children}
+            </ShellClient>
+          </MobileMenuProvider>
         </body>
       </html>
     </ClerkProvider>
