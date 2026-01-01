@@ -10,7 +10,7 @@ import { MobileMenuProvider } from "@/contexts/MobileMenuContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Task Management App",
+  title: "Slate",
   description: "Minimalist Black & White Task Manager",
 };
 
