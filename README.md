@@ -1,3 +1,5 @@
+<img width="1080" height="1080" alt="slate" src="https://github.com/user-attachments/assets/262a45b5-3005-4bcf-b97f-843890862ec2" />
+
 # Slate - Minimalist Task Management App
 
 Slate is a professional-grade, minimalist task management application designed for productivity and focus. Built with a modern tech stack (Next.js, TypeScript, Clerk, and MongoDB), it offers a seamless experience for managing personal objectives with a clean, high-contrast aesthetic.
